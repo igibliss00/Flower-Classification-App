@@ -16,15 +16,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ms0-Ap-KlT">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ms0-Ap-KlT" secondAttribute="height" multiplier="207:200" id="OWz-vW-fUw"/>
+                                </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ad8-2i-Dp3">
+                                <rect key="frame" x="0.0" y="496" width="414" height="366"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Ms0-Ap-KlT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="2g9-dy-g0Q"/>
-                            <constraint firstItem="Ms0-Ap-KlT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UEq-WI-j7k"/>
-                            <constraint firstAttribute="bottom" secondItem="Ms0-Ap-KlT" secondAttribute="bottom" id="ipM-IL-z42"/>
-                            <constraint firstItem="Ms0-Ap-KlT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ufJ-VS-A2s"/>
+                            <constraint firstItem="Ms0-Ap-KlT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6d4-Im-MOP"/>
+                            <constraint firstItem="Ms0-Ap-KlT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="OVL-Op-xfZ"/>
+                            <constraint firstItem="Ad8-2i-Dp3" firstAttribute="top" secondItem="Ms0-Ap-KlT" secondAttribute="bottom" constant="8" id="T4k-t0-gTg"/>
+                            <constraint firstItem="Ad8-2i-Dp3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cML-Jo-12H"/>
+                            <constraint firstItem="Ms0-Ap-KlT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kX9-PU-77n"/>
+                            <constraint firstItem="Ad8-2i-Dp3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lB6-jp-aFB"/>
+                            <constraint firstItem="Ad8-2i-Dp3" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ldv-Wo-fDp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -37,6 +49,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="imageView" destination="Ms0-Ap-KlT" id="bF4-GM-i8f"/>
+                        <outlet property="label" destination="Ad8-2i-Dp3" id="tse-oO-Ibg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
